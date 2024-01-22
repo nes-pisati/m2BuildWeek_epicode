@@ -1,0 +1,340 @@
+:root {
+    --darkviolet: #900080;
+    --lightviolet: #D20094;
+    --blue: #00FFFF;
+}
+
+#bodyDiv {
+    background-image: url('/assets/bg.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: column;
+    height: 100vh
+}
+
+
+/* up section */
+#headerQuiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* center section */
+
+#mainQuiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    max-width: 75%;
+}
+
+/* media queries per PC */
+
+
+img {
+    width: 100%;
+}
+
+.timer {
+    margin-top: 40px;
+    width: 130px;
+    height: 130px;
+    border-radius: 90px;
+    background-color: transparent;
+    box-shadow: 0px 0px 20px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second {
+    margin: 0;
+    font-size: 10px;
+    font: 'Outfit', sans-serif;
+}
+
+.countdown {
+    margin: 0;
+    font-size: 35px;
+    font: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.remaining {
+    margin: 0;
+    font-size: 10px;
+    font: 'Outfit', sans-serif;
+}
+
+.containerButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+    width: 650px;
+}
+
+.buttonResponse {
+    width: 300px;
+    height: 65px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 0.5px solid white;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.buttonResponse:hover {
+    background-image: linear-gradient(#D20094, #900080);
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-weight: 500;
+}
+
+/* last page pc*/
+
+.finalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.congratulation {
+    font-size: 25px;
+}
+
+.description {
+    font-size: 20px;
+    width: 100%;
+}
+
+.containerAnswer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 550px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 12px 5px #888888;
+}
+
+
+/* correct */
+.containerAnswerFiltered {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.containerAnswerFiltered:hover {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #00ff0066;
+}
+
+.containerCorrect {
+    width: 20px;
+    height: 20px;
+}
+
+/* fail */
+
+.containerAnswerFailFiltered {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.containerAnswerFailFiltered:hover {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ff0000a8;
+}
+
+.containerfail {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* telefoni */
+
+@media screen and (max-width: 400px) {
+    figure {
+        max-width: 100px;
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .containerButton {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        width: fit-content
+    }
+
+    .buttonResponse {
+        width: 200px;
+        height: 60px;
+        background-color: transparent;
+        border-radius: 40px;
+        border-color: white;
+        color: white;
+    }
+
+    .buttonResponse:focus {
+        background-image: linear-gradient(#D20094, #900080);
+    }
+
+    .timer {
+        width: 100px;
+        height: 100px;
+    }
+
+    .second,
+    .remaining {
+        margin: 0;
+        font-size: 8px;
+        font: 'Outfit', sans-serif;
+    }
+
+    .countdown {
+        margin: 0;
+        font-size: 30px;
+        font: 'Outfit', sans-serif;
+        font-weight: 500;
+    }
+
+    #mainQuiz {
+        margin: 50px 0 50px 0;
+    }
+
+    .questionTitle {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    /* last page smartphone*/
+
+    .finalContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .congratulation {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .containerAnswer {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 300px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid lightgray;
+        box-shadow: 0px 0px 12px 5px #888888;
+    }
+
+    .correctAnswerFiltered {
+        filter: none;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    .failAnswerFiltered {
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    .correctAnswerFiltered:hover {
+        filter: none;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #00ff0066;
+        ;
+
+    }
+
+    .failAnswerFiltered:hover {
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        border-radius: 5px;
+        font-weight: 700;
+        background-color: #ff0000a8;
+    }
+
+}
+
+.congratulation {
+    color: white;
+}
+
